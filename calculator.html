@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Intro</title>
+  <style>
+  /* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.hero-content {
+  margin-bottom: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0077b6;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #005a8c;
+}
+
+.hero-image {
+  max-width: 100%;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Features section */
+.features {
+  background-color: #f5f5f5;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.features ul {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.features li {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Calculator</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>The Ultimate Calculator App</h1>
+        <p>Simplify your calculations with our powerful and intuitive calculator.</p>
+        <a href="cs3.html" class="btn">click to open </a>
+      </div>
+      <div class="hero-image">
+        <img src="data:image/png;base64,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" alt="Calculator app interface">
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Basic arithmetic operations</li>
+        <li>Scientific mode for advanced calculations</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Calculator Intro</p>
+  </footer>
+</body>
+</html>
